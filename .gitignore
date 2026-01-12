@@ -1,0 +1,19 @@
+# --- DevSecOps & Runner Junk (The 450MB Culprit) ---
+actions-runner/
+*.tar.gz
+
+# --- Node.js Dependencies (Standard Practice) ---
+node_modules/
+app/node_modules/
+npm-debug.log
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Secrets & Environment Variables ---
+.env
+
+# --- Docker/Build Artifacts ---
+dist/
+build/
